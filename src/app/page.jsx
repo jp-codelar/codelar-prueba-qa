@@ -16,7 +16,7 @@ const Iniciar = () => {
     const email = e.target.email.value
     const password = e.target.password.value
     if (email === EMAIL_DEFAULT && password === PASSWORD_DEFAULT) {
-      push("/home")
+      push("/app")
     } else {
       toast.error("Inicio de sesión incorrecto, intente nuevamente")
     }
