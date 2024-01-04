@@ -10,7 +10,7 @@ function findUser(nit) {
     return [{
       nit: '111119',
       name: "John",
-      age: 32,
+      age: getAgeRange(21, 59),
       location: "Cr 6 No. 14-48 OF 202"
     }]
   }
@@ -19,12 +19,16 @@ function findUser(nit) {
     return [{
       nit: '123456',
       name: "Martha",
-      age: 22,
+      age: getAgeRange(21, 59),
       location: "Cr 12 No. 20-69 OF 108"
     }]
   }
 
   return []
+}
+
+function getAgeRange(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 export default handler
