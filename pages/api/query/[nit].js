@@ -10,7 +10,7 @@ function findUser(nit) {
     return [{
       nit: '111119',
       name: "John",
-      age: getAgeRange(21, 59),
+      age: 32,
       location: "Cr 6 No. 14-48 OF 202"
     }]
   }
